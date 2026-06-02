@@ -1,0 +1,13 @@
+{
+  "name": "wordwise",
+  "display_name": "WordWise",
+  "description": "Word count + reading-time estimator for writers and editors.",
+  "category": "tools",
+  "language": "python",
+  "framework": "fastapi",
+  "endpoints": [
+    { "path": "/health", "method": "GET", "description": "Liveness probe." },
+    { "path": "/", "method": "GET", "description": "The WordWise web UI." },
+    { "path": "/run", "method": "POST", "description": "Analyze text — returns word/character counts and reading time." }
+  ]
+}
